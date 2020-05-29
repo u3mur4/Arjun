@@ -212,7 +212,7 @@ def initialize(url, include, headers, GET, delay, paramList, threadCount):
             toBeChecked = unityExtracter(toBeChecked, foundParamsTemp)
             if not toBeChecked:
                 break
-
+        return foundParamsTemp
         foundParams = []
 
         for param in foundParamsTemp:
